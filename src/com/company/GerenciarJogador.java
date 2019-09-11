@@ -3,7 +3,11 @@ import java.util.Scanner;
 import java.io.IOException;
 
 
+/**
+ * Essa é a classe principal que cadastra os times adiciona jogadores remove e lista jogadores e times
+ */
 public class GerenciarJogador {
+
     Time times[]= new Time[3];
 
 
@@ -69,7 +73,10 @@ public class GerenciarJogador {
     }
 
 
-
+    /**
+     * Esse metodo Cadastra o time
+     * @param time Tipo Time
+     */
     public void execCadTime(Time time){
         Scanner leitorID = new Scanner(System.in);
         System.out.println("Entre com o ID do time");
@@ -97,9 +104,9 @@ public class GerenciarJogador {
     }
 
 
-
-
-
+    /**
+     * @param jogador Function efetua o cadastro do JOgador
+     */
     public void execCadJogador(Jogador jogador){
         Scanner leitorID = new Scanner(System.in);
         System.out.println("Digite o ID do Jogador");
@@ -113,8 +120,10 @@ public class GerenciarJogador {
     }
 
 
-
-
+    /**
+     * @param jogador Tipo Jogador
+     *                Esse metodo chama uma função da class Time e Add o Jogador criado no time escolhido
+     */
     public void execCadJogadorTime(Jogador jogador){
         int option = 0;
         int option2 = 0;
@@ -140,6 +149,10 @@ public class GerenciarJogador {
 
 
     }
+
+    /**
+     * Lista os Times cadastrados
+     */
     public void listarDadosTime(){
         System.out.println("LISTA DE TIMES");
 
@@ -152,6 +165,11 @@ public class GerenciarJogador {
 
 
     }
+
+    /**
+     * Function que Jogador escolhe o time e lista os jogadores adicionados a esse time
+     */
+
     public void listarJogadorTime() {
 
         System.out.println("Escolha o time para listar os jogadores");
@@ -177,6 +195,9 @@ public class GerenciarJogador {
 
      }
 
+    /**
+     * Function remove o jogador do time escolhido
+     */
         public void execRemoveJogador(){
 
             System.out.println("Escolha o time que deseja remover o jogadores");

@@ -33,6 +33,9 @@ public class Time {
         }
     }
 
+    /**
+     * Function printa os dados do jogador escolhido na ao ser chamada na function listarJogadorTime() que esta na class principal
+     */
     public void listarJogadores() {
         for (int i = 0; i < jogadores.length; i++) {
             if(this.jogadores[i]!=null){
@@ -48,6 +51,9 @@ public class Time {
         }
     }
 
+    /**
+     * Lista os Times Cadastrados
+     */
     public void listar() {
         System.out.println("--------------");
         System.out.println("ID: " + getIdTime());
